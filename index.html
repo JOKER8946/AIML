@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--steel:#e2e5e2;--card:#f6f7f5;--ink:#16191b;--yellow:#f4c400;--mute:#454d52;--line:#b4bbb8;--ok:#4be08a}
+:root{--steel:#e4eaee;--card:#f5f8fa;--ink:#16191b;--accent:#8ecdf2;--mute:#454d52;--line:#b4bfc6;--ok:#4be08a}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{font:17px/1.55 Barlow,system-ui,sans-serif;color:var(--ink);background:var(--steel)}
@@ -17,22 +17,22 @@ h1,h2,h3,.num{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weig
 a{color:inherit}
 :focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
-.haz{height:12px;background:repeating-linear-gradient(-45deg,var(--yellow) 0 14px,var(--ink) 14px 28px)}
+.haz{height:12px;background:repeating-linear-gradient(-45deg,var(--accent) 0 14px,var(--ink) 14px 28px)}
 
 /* header */
 .top{position:sticky;top:0;z-index:20;background:var(--ink);color:#fff}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 26px "Barlow Condensed",sans-serif;letter-spacing:.01em}
 .brand img{height:42px;width:auto}
-.brand span{color:var(--yellow)}
+.brand span{color:var(--accent)}
 .top nav{display:flex;align-items:center;gap:26px;font-weight:500;font-size:16px}
 .top nav a{text-decoration:none;color:#d6dbd9}
 .top nav a:hover{color:#fff}
-.btn{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:600;font-size:18px;padding:13px 24px;border:2px solid var(--ink);border-radius:4px;text-decoration:none;box-shadow:4px 4px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn{display:inline-block;background:var(--accent);color:var(--ink);font-weight:600;font-size:18px;padding:13px 24px;border:2px solid var(--ink);border-radius:4px;text-decoration:none;box-shadow:4px 4px 0 var(--ink);transition:transform .12s,box-shadow .12s}
 .btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
 .btn.ghost{background:transparent;box-shadow:none}
 .btn.ghost:hover{transform:none;background:var(--card)}
-.top .btn{padding:8px 16px;font-size:16px;border-color:var(--yellow);box-shadow:none}
+.top .btn{padding:8px 16px;font-size:16px;border-color:var(--accent);box-shadow:none}
 .top .btn:hover{transform:none;background:#fff}
 
 /* hero */
@@ -50,7 +50,7 @@ h1{font-size:clamp(64px,16vw,170px);line-height:.84;margin-bottom:24px}
 .plate dd{font-weight:600;font-size:18px}
 
 /* run panel */
-.run{background:var(--ink);color:#fff;border-radius:6px;padding:26px 24px;box-shadow:8px 8px 0 var(--yellow)}
+.run{background:var(--ink);color:#fff;border-radius:6px;padding:26px 24px;box-shadow:8px 8px 0 var(--accent)}
 .run h2{font-size:30px;margin-bottom:18px}
 .run ol{list-style:none}
 .run li{display:grid;grid-template-columns:22px 1fr auto;align-items:center;gap:14px;padding:14px 0;border-top:1px solid #343b3f}
@@ -71,7 +71,7 @@ h2.sec{font-size:clamp(40px,7vw,68px);margin-bottom:16px;max-width:14em}
 .lead{max-width:36em;color:var(--mute);font-size:19px;margin-bottom:36px}
 .levels{display:grid;gap:20px}
 .lvl{background:var(--card);border:2px solid var(--ink);padding:22px;display:grid;grid-template-columns:auto 1fr;gap:4px 18px}
-.num{grid-row:span 2;display:grid;place-items:center;width:64px;height:64px;background:var(--yellow);border:2px solid var(--ink);font-size:44px}
+.num{grid-row:span 2;display:grid;place-items:center;width:64px;height:64px;background:var(--accent);border:2px solid var(--ink);font-size:44px}
 .lvl h3{font-size:32px;align-self:end}
 .lvl p{grid-column:1/-1;margin-top:10px}
 .lvl h3+p{grid-column:2;margin-top:0;color:var(--mute);font-weight:500}
@@ -92,7 +92,7 @@ h2.sec{font-size:clamp(40px,7vw,68px);margin-bottom:16px;max-width:14em}
 dl.spec{display:grid;border-top:2px solid var(--ink)}
 dl.spec div{display:grid;gap:2px 24px;padding:16px 0;border-bottom:1px solid var(--line)}
 dl.spec dt{font:700 24px "Barlow Condensed",sans-serif}
-.reg{background:var(--yellow);border-block:2px solid var(--ink);text-align:left}
+.reg{background:var(--accent);border-block:2px solid var(--ink);text-align:left}
 .reg .btn{background:var(--ink);color:#fff;border-color:var(--ink);box-shadow:4px 4px 0 #fff}
 .reg p{max-width:34em;font-size:20px;margin-bottom:28px}
 footer{background:var(--ink);color:#c9cfcd;font-size:15px;padding:28px 0 36px}
@@ -117,7 +117,7 @@ footer b{color:#fff;font-weight:600}
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#top" id="brand" aria-label="Automathon 2.0">
-      <svg width="30" height="30" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="4" fill="#f4c400"/><circle cx="7.5" cy="14" r="3" fill="#16191b"/><circle cx="20.5" cy="7.5" r="3" fill="#16191b"/><circle cx="20.5" cy="20.5" r="3" fill="#16191b"/><path d="M10 13 18 8.5M10 15 18 19.5" stroke="#16191b" stroke-width="1.8" fill="none"/></svg>
+      <svg width="30" height="30" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="4" fill="#8ecdf2"/><circle cx="7.5" cy="14" r="3" fill="#16191b"/><circle cx="20.5" cy="7.5" r="3" fill="#16191b"/><circle cx="20.5" cy="20.5" r="3" fill="#16191b"/><path d="M10 13 18 8.5M10 15 18 19.5" stroke="#16191b" stroke-width="1.8" fill="none"/></svg>
       <div>Automathon <span>2.0</span></div>
     </a>
     <nav aria-label="Main">
@@ -179,18 +179,19 @@ footer b{color:#fff;font-weight:600}
 <section id="local-ai" class="ai">
   <div class="wrap">
     <div>
-      <h2 class="sec">AI stays on your laptop</h2>
-      <p class="lead" style="margin-bottom:0">Use any AI assistant to help you build. But if your finished workflow uses AI, it has to run on a local model such as Ollama. No cloud AI APIs and no API keys.</p>
+      <h2 class="sec">Use AI your way</h2>
+      <p class="lead" style="margin-bottom:0">Use any AI assistant to help you build. Your workflow can use local or cloud AI services, including their APIs and API keys. n8n Cloud is allowed.</p>
     </div>
     <div class="cols">
       <div class="col"><h3>Allowed</h3><ul>
-        <li>Local models such as Ollama inside your workflow</li>
+        <li>Local or cloud AI services inside your workflow</li>
+        <li>AI APIs and API keys</li>
+        <li>n8n Cloud or self-hosted n8n</li>
         <li>ChatGPT, Claude or any assistant to help you build</li>
         <li>Telegram, Gmail, Google Sheets and webhooks</li>
         <li>n8n docs, the community forum and templates</li>
       </ul></div>
       <div class="col no"><h3>Not allowed</h3><ul>
-        <li>Cloud AI services or API keys inside a workflow</li>
         <li>Starting from a workflow you built before the event</li>
         <li>Copying a full solution from another team or the internet</li>
       </ul></div>
@@ -217,7 +218,6 @@ footer b{color:#fff;font-weight:600}
       <div><dt>Fee</dt><dd>₹499 per team, paid by UPI through the registration form. Fees are non-refundable.</dd></div>
       <div><dt>Bring</dt><dd>A laptop and charger. Every team starts with an empty n8n workspace.</dd></div>
       <div><dt>Food</dt><dd>Lunch and refreshments are provided.</dd></div>
-      <div><dt>Staying over</dt><dd>Accommodation is available on request and is chargeable. Tick it in the form so we can plan.</dd></div>
       <div><dt>Submitting</dt><dd>We share a submission link for each level. Late submissions are not accepted.</dd></div>
       <div><dt>Rules</dt><dd>Eligibility, levels, submission, conduct and disqualification are all in the <a class="rb-link" href="rulebook.pdf">rulebook</a>.</dd></div>
     </dl>
@@ -261,11 +261,25 @@ if (CONFIG.logo) {
   document.getElementById("brand").innerHTML = '<img src="' + CONFIG.logo + '" alt="Automathon 2.0">';
 }
 (function () {
-  var days = Math.ceil((new Date("2026-11-12T09:00:00+05:30") - Date.now()) / 864e5);
   var el = document.getElementById("count");
-  if (days > 1) el.textContent = days + " days to the hackathon";
-  else if (days === 1) el.textContent = "Hackathon is tomorrow";
-  else if (days === 0) el.textContent = "Hackathon is today";
+  var eventDate = Date.UTC(2026, 10, 12);
+
+  function updateCountdown() {
+    var now = new Date();
+    var istNow = new Date(now.getTime() + 330 * 60 * 1000);
+    var today = Date.UTC(istNow.getUTCFullYear(), istNow.getUTCMonth(), istNow.getUTCDate());
+    var days = Math.round((eventDate - today) / 864e5);
+
+    if (days > 1) el.textContent = days + " days to the hackathon";
+    else if (days === 1) el.textContent = "Hackathon is tomorrow";
+    else if (days === 0) el.textContent = "Hackathon is today";
+    else el.textContent = "";
+
+    var nextMidnightIST = today + 864e5 - 330 * 60 * 1000;
+    setTimeout(updateCountdown, Math.max(1000, nextMidnightIST - now.getTime() + 1000));
+  }
+
+  updateCountdown();
 })();
 </script>
 </body>
